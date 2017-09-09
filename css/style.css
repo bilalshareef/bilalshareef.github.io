@@ -69,14 +69,14 @@ body {
 }
 .button-1:hover {
     background-color: #1E1B18;
-    color: #f44336;
+    color: #F44336;
 }
 
 /* Main Styles */
 .left-section {
     width: 50%;
     height: 100%;
-    background-color: #f44336;
+    background-color: #F44336;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -94,7 +94,7 @@ body {
 .left-section > div:last-child {
     margin-bottom: 0;
 }
-.profile-image-wrap {
+.profile-image {
     height: 200px;
     width: 200px;
     background-image: url(../images/bilal.jpg);
@@ -103,6 +103,12 @@ body {
     background-repeat: no-repeat;
     border-radius: 50%;
     border: 2px solid #1E1B18;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+.profile-image:active {
+    transform: scale(0.9, 0.9);
 }
 .social-icons-wrap a {
     text-decoration: none;
@@ -119,4 +125,85 @@ body {
 }
 .profile-description {
     font-size: 24px;
+}
+
+/* Themes Styles */
+/* Theme Red */
+.theme-red .button-1:hover {
+    color: #F44336;
+}
+.theme-red .left-section {
+    background-color: #F44336;
+}
+
+/* Theme Green */
+.theme-green .button-1:hover {
+    color: #4CAF50;
+}
+.theme-green .left-section {
+    background-color: #4CAF50;
+}
+
+/* Theme Blue */
+.theme-blue .button-1:hover {
+    color: #2196F3;
+}
+.theme-blue .left-section {
+    background-color: #2196F3;
+}
+
+/* Theme Yellow */
+.theme-yellow .button-1:hover {
+    color: #FFEB3B;
+}
+.theme-yellow .left-section {
+    background-color: #FFEB3B;
+}
+
+/* Theme Purple */
+.theme-purple .button-1:hover {
+    color: #9C27B0;
+}
+.theme-purple .left-section {
+    background-color: #9C27B0;
+}
+
+/* Theme Orange */
+.theme-orange .button-1:hover {
+    color: #FF9800;
+}
+.theme-orange .left-section {
+    background-color: #FF9800;
+}
+
+/* Theme Indigo */
+.theme-indigo .button-1:hover {
+    color: #3F51B5;
+}
+.theme-indigo .left-section {
+    background-color: #3F51B5;
+}
+
+/* Theme Cyan */
+.theme-cyan .button-1:hover {
+    color: #00BCD4;
+}
+.theme-cyan .left-section {
+    background-color: #00BCD4;
+}
+
+/* Theme Teal */
+.theme-teal .button-1:hover {
+    color: #009688;
+}
+.theme-teal .left-section {
+    background-color: #009688;
+}
+
+/* Theme Amber */
+.theme-amber .button-1:hover {
+    color: #FFC107;
+}
+.theme-amber .left-section {
+    background-color: #FFC107;
 }
