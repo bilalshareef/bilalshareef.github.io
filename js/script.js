@@ -37,7 +37,7 @@
     setInterval(changeText, 2000);
     
     function changeTheme() {
-        var randomIndex = Math.floor((Math.random() * 10));
+        var randomIndex = Math.floor((Math.random() * themesArray.length));
         
         /*
          * Check if the generated random index is same as the last index.
