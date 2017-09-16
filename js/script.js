@@ -12,13 +12,13 @@
         'theme-red',
         'theme-green',
         'theme-blue',
-        'theme-yellow',
+        'theme-brown',
         'theme-purple',
         'theme-orange',
         'theme-indigo',
         'theme-cyan',
         'theme-teal',
-        'theme-amber'
+        'theme-grey'
     ];
     var lastThemeIndex = 0;
 

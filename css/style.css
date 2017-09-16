@@ -47,6 +47,7 @@ table {
 body {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    color: #1E1B18;
 }
 .clearfix:after {
     content: '';
@@ -87,7 +88,7 @@ body {
 .right-section {
     width: 50%;
     float: right;
-    min-height: 600px;
+    padding: 50px 0;
 }
 .left-section > div {
     margin-bottom: 20px;
@@ -127,10 +128,63 @@ body {
 .profile-description {
     font-size: 24px;
 }
+.details-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.details-section:last-child {
+    margin-bottom: 0;
+}
+.detail-title {
+    width: 20%;
+}
+.detail-title h3 {
+    color: #F44336;
+    font-size: 20px;
+}
+.detail-content {
+    width: 70%;
+}
+.detail-content p {
+    font-size: 16px;
+    line-height: 26px;
+}
+.detail-content ul {
+    list-style: disc;
+    margin-left: 20px;
+    line-height: 26px;
+}
+.detail-content ul li {
+    color: #F44336;
+}
+.detail-content ul li span {
+    color: #1E1B18;
+    font-weight: bold;
+}
+.sub-detail {
+    margin-bottom: 20px;
+}
+.sub-detail:last-child {
+    margin-bottom: 0;
+}
+.sub-detail-title span {
+    font-weight: bold;
+    line-height: 26px;
+}
+.sub-detail-title span:first-child {
+    float: left;
+}
+.sub-detail-title span:last-child {
+    float: right;
+}
 
 /* Themes Styles */
 /* Theme Red */
-.theme-red .button-1:hover {
+.theme-red .button-1:hover,
+.theme-red .detail-title h3,
+.theme-red .detail-content ul li {
     color: #F44336;
 }
 .theme-red .left-section {
@@ -138,7 +192,9 @@ body {
 }
 
 /* Theme Green */
-.theme-green .button-1:hover {
+.theme-green .button-1:hover,
+.theme-green .detail-title h3,
+.theme-green .detail-content ul li {
     color: #4CAF50;
 }
 .theme-green .left-section {
@@ -146,23 +202,29 @@ body {
 }
 
 /* Theme Blue */
-.theme-blue .button-1:hover {
+.theme-blue .button-1:hover,
+.theme-blue .detail-title h3,
+.theme-blue .detail-content ul li {
     color: #2196F3;
 }
 .theme-blue .left-section {
     background-color: #2196F3;
 }
 
-/* Theme Yellow */
-.theme-yellow .button-1:hover {
-    color: #FFEB3B;
+/* Theme Brown */
+.theme-brown .button-1:hover,
+.theme-brown .detail-title h3,
+.theme-brown .detail-content ul li {
+    color: #795548;
 }
-.theme-yellow .left-section {
-    background-color: #FFEB3B;
+.theme-brown .left-section {
+    background-color: #795548;
 }
 
 /* Theme Purple */
-.theme-purple .button-1:hover {
+.theme-purple .button-1:hover,
+.theme-purple .detail-title h3,
+.theme-purple .detail-content ul li {
     color: #9C27B0;
 }
 .theme-purple .left-section {
@@ -170,7 +232,9 @@ body {
 }
 
 /* Theme Orange */
-.theme-orange .button-1:hover {
+.theme-orange .button-1:hover,
+.theme-orange .detail-title h3,
+.theme-orange .detail-content ul li {
     color: #FF9800;
 }
 .theme-orange .left-section {
@@ -178,7 +242,9 @@ body {
 }
 
 /* Theme Indigo */
-.theme-indigo .button-1:hover {
+.theme-indigo .button-1:hover,
+.theme-indigo .detail-title h3,
+.theme-indigo .detail-content ul li {
     color: #3F51B5;
 }
 .theme-indigo .left-section {
@@ -186,7 +252,9 @@ body {
 }
 
 /* Theme Cyan */
-.theme-cyan .button-1:hover {
+.theme-cyan .button-1:hover,
+.theme-cyan .detail-title h3,
+.theme-cyan .detail-content ul li {
     color: #00BCD4;
 }
 .theme-cyan .left-section {
@@ -194,17 +262,21 @@ body {
 }
 
 /* Theme Teal */
-.theme-teal .button-1:hover {
+.theme-teal .button-1:hover,
+.theme-teal .detail-title h3,
+.theme-teal .detail-content ul li {
     color: #009688;
 }
 .theme-teal .left-section {
     background-color: #009688;
 }
 
-/* Theme Amber */
-.theme-amber .button-1:hover {
-    color: #FFC107;
+/* Theme Grey */
+.theme-grey .button-1:hover,
+.theme-grey .detail-title h3,
+.theme-grey .detail-content ul li {
+    color: #9E9E9E;
 }
-.theme-amber .left-section {
-    background-color: #FFC107;
+.theme-grey .left-section {
+    background-color: #9E9E9E;
 }
