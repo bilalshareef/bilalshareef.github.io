@@ -377,4 +377,75 @@ body {
         width: auto;
         float: none;
     }
+    
+    /* Responsive Themes Styles */
+    /* Theme Red */
+    .theme-red .left-section {
+        -webkit-box-shadow: 0 16px 26px -10px rgba(244, 67, 54, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2);
+        -moz-box-shadow: 0 16px 26px -10px rgba(244, 67, 54, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2);
+        box-shadow: 0 16px 26px -10px rgba(244, 67, 54, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2);
+    }
+
+    /* Theme Green */
+    .theme-green .left-section {
+        -webkit-box-shadow: 0 16px 26px -10px rgba(76, 175, 80, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(76, 175, 80, 0.2);
+        -moz-box-shadow: 0 16px 26px -10px rgba(76, 175, 80, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(76, 175, 80, 0.2);
+        box-shadow: 0 16px 26px -10px rgba(76, 175, 80, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(76, 175, 80, 0.2);
+    }
+
+    /* Theme Blue */
+    .theme-blue .left-section {
+        -webkit-box-shadow: 0 16px 26px -10px rgba(33, 150, 243, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(33, 150, 243, 0.2);
+        -moz-box-shadow: 0 16px 26px -10px rgba(33, 150, 243, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(33, 150, 243, 0.2);
+        box-shadow: 0 16px 26px -10px rgba(33, 150, 243, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(33, 150, 243, 0.2);
+    }
+
+    /* Theme Brown */
+    .theme-brown .left-section {
+        -webkit-box-shadow: 0 16px 26px -10px rgba(121, 85, 72, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(121, 85, 72, 0.2);
+        -moz-box-shadow: 0 16px 26px -10px rgba(121, 85, 72, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(121, 85, 72, 0.2);
+        box-shadow: 0 16px 26px -10px rgba(121, 85, 72, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(121, 85, 72, 0.2);
+    }
+
+    /* Theme Purple */
+    .theme-purple .left-section {
+        -webkit-box-shadow: 0 16px 26px -10px rgba(156, 39, 176, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(156, 39, 176, 0.2);
+        -moz-box-shadow: 0 16px 26px -10px rgba(156, 39, 176, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(156, 39, 176, 0.2);
+        box-shadow: 0 16px 26px -10px rgba(156, 39, 176, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(156, 39, 176, 0.2);
+    }
+
+    /* Theme Orange */
+    .theme-orange .left-section {
+        -webkit-box-shadow: 0 16px 26px -10px rgba(255, 152, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(255, 152, 0, 0.2);
+        -moz-box-shadow: 0 16px 26px -10px rgba(255, 152, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(255, 152, 0, 0.2);
+        box-shadow: 0 16px 26px -10px rgba(255, 152, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(255, 152, 0, 0.2);
+    }
+
+    /* Theme Indigo */
+    .theme-indigo .left-section {
+        -webkit-box-shadow: 0 16px 26px -10px rgba(63, 81, 181, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(63, 81, 181, 0.2);
+        -moz-box-shadow: 0 16px 26px -10px rgba(63, 81, 181, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(63, 81, 181, 0.2);
+        box-shadow: 0 16px 26px -10px rgba(63, 81, 181, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(63, 81, 181, 0.2);
+    }
+
+    /* Theme Cyan */
+    .theme-cyan .left-section {
+        -webkit-box-shadow: 0 16px 26px -10px rgba(0, 188, 212, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 188, 212, 0.2);
+        -moz-box-shadow: 0 16px 26px -10px rgba(0, 188, 212, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 188, 212, 0.2);
+        box-shadow: 0 16px 26px -10px rgba(0, 188, 212, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 188, 212, 0.2);
+    }
+
+    /* Theme Teal */
+    .theme-teal .left-section {
+        -webkit-box-shadow: 0 16px 26px -10px rgba(0, 150, 136, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 150, 136, 0.2);
+        -moz-box-shadow: 0 16px 26px -10px rgba(0, 150, 136, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 150, 136, 0.2);
+        box-shadow: 0 16px 26px -10px rgba(0, 150, 136, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 150, 136, 0.2);
+    }
+
+    /* Theme Grey */
+    .theme-grey .left-section {
+        -webkit-box-shadow: 0 16px 26px -10px rgba(158, 158, 158, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(158, 158, 158, 0.2);
+        -moz-box-shadow: 0 16px 26px -10px rgba(158, 158, 158, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(158, 158, 158, 0.2);
+        box-shadow: 0 16px 26px -10px rgba(158, 158, 158, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(158, 158, 158, 0.2);
+    }
 }
