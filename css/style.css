@@ -156,9 +156,14 @@ body {
     color: #F44336;
     font-size: 20px;
     font-weight: 600;
+    line-height: 30px;
 }
 .detail-content {
     width: 70%;
+}
+.detail-content.center-content {
+    display: flex;
+    align-items: center;
 }
 .detail-content p {
     font-size: 16px;
@@ -176,9 +181,12 @@ body {
 .detail-content ul li {
     color: #F44336;
 }
-.detail-content ul li span {
+.detail-content ul li span, .detail-content ul li a {
     color: #1E1B18;
     font-weight: 600;
+}
+.detail-content ul li a {
+    text-decoration: none;
 }
 .sub-detail {
     margin-bottom: 20px;
@@ -196,7 +204,8 @@ body {
 .theme-red .button-1:hover,
 .theme-red .detail-title h3,
 .theme-red .detail-content ul li,
-.theme-red .detail-content p a:hover {
+.theme-red .detail-content p a:hover,
+.theme-red .detail-content ul li a:hover {
     color: #F44336;
 }
 .theme-red .left-section {
@@ -210,7 +219,8 @@ body {
 .theme-green .button-1:hover,
 .theme-green .detail-title h3,
 .theme-green .detail-content ul li,
-.theme-green .detail-content p a:hover {
+.theme-green .detail-content p a:hover,
+.theme-green .detail-content ul li a:hover {
     color: #4CAF50;
 }
 .theme-green .left-section {
@@ -224,7 +234,8 @@ body {
 .theme-blue .button-1:hover,
 .theme-blue .detail-title h3,
 .theme-blue .detail-content ul li,
-.theme-blue .detail-content p a:hover {
+.theme-blue .detail-content p a:hover,
+.theme-blue .detail-content ul li a:hover {
     color: #2196F3;
 }
 .theme-blue .left-section {
@@ -238,7 +249,8 @@ body {
 .theme-brown .button-1:hover,
 .theme-brown .detail-title h3,
 .theme-brown .detail-content ul li,
-.theme-brown .detail-content p a:hover {
+.theme-brown .detail-content p a:hover,
+.theme-brown .detail-content ul li a:hover {
     color: #795548;
 }
 .theme-brown .left-section {
@@ -252,7 +264,8 @@ body {
 .theme-purple .button-1:hover,
 .theme-purple .detail-title h3,
 .theme-purple .detail-content ul li,
-.theme-purple .detail-content p a:hover {
+.theme-purple .detail-content p a:hover,
+.theme-purple .detail-content ul li a:hover {
     color: #9C27B0;
 }
 .theme-purple .left-section {
@@ -266,7 +279,8 @@ body {
 .theme-orange .button-1:hover,
 .theme-orange .detail-title h3,
 .theme-orange .detail-content ul li,
-.theme-orange .detail-content p a:hover {
+.theme-orange .detail-content p a:hover,
+.theme-orange .detail-content ul li a:hover {
     color: #FF9800;
 }
 .theme-orange .left-section {
@@ -280,7 +294,8 @@ body {
 .theme-indigo .button-1:hover,
 .theme-indigo .detail-title h3,
 .theme-indigo .detail-content ul li,
-.theme-indigo .detail-content p a:hover {
+.theme-indigo .detail-content p a:hover,
+.theme-indigo .detail-content ul li a:hover {
     color: #3F51B5;
 }
 .theme-indigo .left-section {
@@ -294,7 +309,8 @@ body {
 .theme-cyan .button-1:hover,
 .theme-cyan .detail-title h3,
 .theme-cyan .detail-content ul li,
-.theme-cyan .detail-content p a:hover {
+.theme-cyan .detail-content p a:hover,
+.theme-cyan .detail-content ul li a:hover {
     color: #00BCD4;
 }
 .theme-cyan .left-section {
@@ -308,7 +324,8 @@ body {
 .theme-teal .button-1:hover,
 .theme-teal .detail-title h3,
 .theme-teal .detail-content ul li,
-.theme-teal .detail-content p a:hover {
+.theme-teal .detail-content p a:hover,
+.theme-teal .detail-content ul li a:hover {
     color: #009688;
 }
 .theme-teal .left-section {
@@ -322,7 +339,8 @@ body {
 .theme-grey .button-1:hover,
 .theme-grey .detail-title h3,
 .theme-grey .detail-content ul li,
-.theme-grey .detail-content p a:hover {
+.theme-grey .detail-content p a:hover,
+.theme-grey .detail-content ul li a:hover {
     color: #9E9E9E;
 }
 .theme-grey .left-section {
