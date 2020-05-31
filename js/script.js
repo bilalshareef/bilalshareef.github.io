@@ -1,7 +1,7 @@
 (function() {
     
     var textsArray = [
-        'Software Developer',
+        'Software Professional',
         'Cricket Fanatic',
         'Gamer',
         'Zealous MCU Fan',
