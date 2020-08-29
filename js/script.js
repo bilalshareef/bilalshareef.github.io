@@ -3,7 +3,7 @@
     var textsArray = [
         'Software Professional',
         'Cricket Fanatic',
-        'Gamer',
+        'FOSS Lover',
         'Zealous MCU Fan',
         'Teetotaller'
     ];
