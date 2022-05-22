@@ -190,7 +190,7 @@ body {
 .sub-detail:last-child {
     margin-bottom: 0;
 }
-.sub-detail-title span {
+.sub-detail-title span, .sub-detail-title div {
     font-weight: 600;
     line-height: 26px;
 }
@@ -405,7 +405,7 @@ body {
         width: auto;
         float: none;
     }
-    
+
     /* Responsive Themes Styles */
     /* Theme Red */
     .theme-red .left-section {
