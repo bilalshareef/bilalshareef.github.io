@@ -2,9 +2,9 @@
 
     var textsArray = [
         'Software Consultant',
-        'Cricket Fanatic',
         'FOSS Lover',
-        'Zealous MCU Fan',
+        'Cricket Fanatic',
+        'Biryani Lover',
         'Teetotaller'
     ];
     var activeTextIndex = 0;
@@ -39,7 +39,7 @@
     function changeTheme() {
         var randomIndex = Math.floor((Math.random() * themesArray.length));
 
-        /*
+        /**
          * Check if the generated random index is same as the last index.
          * If yes, increment the index by one so that same theme is not updated again.
          */
