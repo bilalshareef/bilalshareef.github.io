@@ -52,6 +52,7 @@
     }
 
     changeTheme();
+    setInterval(changeTheme, 5000);
     document.querySelector('.profile-image').addEventListener('click', changeTheme);
 
 }());

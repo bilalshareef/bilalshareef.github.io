@@ -89,10 +89,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    -webkit-transition: background-color 0.5s ease;
-    -moz-transition: background-color 0.5s ease;
-    -o-transition: background-color 0.5s ease;
-    transition: background-color 0.5s ease;
+    -webkit-transition: background-color 1s ease, box-shadow 1s ease;
+    -moz-transition: background-color 1s ease, box-shadow 1s ease;
+    -o-transition: background-color 1s ease, box-shadow 1s ease;
+    transition: background-color 1s ease, box-shadow 1s ease;
     -webkit-box-shadow: 16px 0 26px -10px rgba(244, 67, 54, 0.56), 4px 0 25px 0px rgba(0, 0, 0, 0.12), 8px 0 10px -5px rgba(244, 67, 54, 0.2);
     -moz-box-shadow: 16px 0 26px -10px rgba(244, 67, 54, 0.56), 4px 0 25px 0px rgba(0, 0, 0, 0.12), 8px 0 10px -5px rgba(244, 67, 54, 0.2);
     box-shadow: 16px 0 26px -10px rgba(244, 67, 54, 0.56), 4px 0 25px 0px rgba(0, 0, 0, 0.12), 8px 0 10px -5px rgba(244, 67, 54, 0.2);
