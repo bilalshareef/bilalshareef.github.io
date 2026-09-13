@@ -134,7 +134,7 @@
         // Plain text rather than a pre-selected button, so neither choice is nudged.
         consentStatus.textContent = current === null
             ? ''
-            : `Current setting: analytics ${current === 'granted' ? 'accepted' : 'rejected'}.`;
+            : `Current setting: ${current === 'granted' ? 'Accepted' : 'Rejected'}`;
         consentStatus.hidden = current === null;
 
         banner.hidden = false;
