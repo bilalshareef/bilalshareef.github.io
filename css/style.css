@@ -60,6 +60,18 @@ body {
     display: block;
     clear: both;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
 .button-1 {
     text-decoration: none;
     color: #1E1B18;
@@ -197,6 +209,88 @@ body {
 .detail-content p a, .sub-detail-title span a {
     text-decoration: none;
     color: #1E1B18;
+}
+
+/* Consent Banner Styles */
+/* Kept theme-agnostic so it reads correctly against all ten rotating themes. */
+.consent-banner {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: #1E1B18;
+    color: #FFFFFF;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 15px;
+    line-height: 1.5;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.25);
+}
+.consent-banner[hidden] {
+    display: none;
+}
+.consent-banner:focus {
+    outline: none;
+}
+.consent-copy {
+    max-width: 720px;
+}
+.consent-text {
+    margin: 0;
+}
+.consent-status {
+    margin: 6px 0 0;
+    font-size: 14px;
+    opacity: .7;
+}
+.consent-status[hidden] {
+    display: none;
+}
+.consent-actions {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+}
+.consent-button {
+    font-family: inherit;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 0 22px;
+    line-height: 36px;
+    cursor: pointer;
+    -webkit-transition: background-color .3s ease-out, color .3s ease-out;
+    -moz-transition: background-color .3s ease-out, color .3s ease-out;
+    -o-transition: background-color .3s ease-out, color .3s ease-out;
+    transition: background-color .3s ease-out, color .3s ease-out;
+}
+.consent-button:hover, .consent-button:focus {
+    background-color: #FFFFFF;
+    color: #1E1B18;
+}
+.site-footer {
+    text-align: center;
+}
+.consent-reopen {
+    font-family: inherit;
+    font-size: 14px;
+    color: #1E1B18;
+    background: none;
+    border: 0;
+    padding: 4px;
+    cursor: pointer;
+    opacity: .6;
+    text-decoration: underline;
+}
+.consent-reopen:hover, .consent-reopen:focus {
+    opacity: 1;
 }
 
 /* Themes Styles */
@@ -405,6 +499,14 @@ body {
         width: auto;
         float: none;
     }
+    .consent-banner {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+    .consent-actions {
+        justify-content: center;
+    }
 
     /* Responsive Themes Styles */
     /* Theme Red */
@@ -475,5 +577,19 @@ body {
         -webkit-box-shadow: 0 16px 26px -10px rgba(158, 158, 158, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(158, 158, 158, 0.2);
         -moz-box-shadow: 0 16px 26px -10px rgba(158, 158, 158, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(158, 158, 158, 0.2);
         box-shadow: 0 16px 26px -10px rgba(158, 158, 158, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(158, 158, 158, 0.2);
+    }
+}
+
+/* Reduced Motion Styles */
+/* The theme auto-rotation is stopped in JS; this covers the remaining transitions. */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        -webkit-transition-duration: .01ms !important;
+        -moz-transition-duration: .01ms !important;
+        -o-transition-duration: .01ms !important;
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
     }
 }

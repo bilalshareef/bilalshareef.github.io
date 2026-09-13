@@ -1,20 +1,43 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
-        <!-- Global Site Tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106873852-1"></script>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+
+        <!-- Google tag (gtag.js) - Google Analytics 4 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF9WSPE3G7"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments)};
+            function gtag(){dataLayer.push(arguments);}
+
+            // Consent Mode v2: deny by default, so no cookies are set before the visitor chooses.
+            gtag('consent', 'default', {
+                'ad_storage': 'denied',
+                'ad_user_data': 'denied',
+                'ad_personalization': 'denied',
+                'analytics_storage': 'denied',
+                'wait_for_update': 500
+            });
+
+            // Re-apply a stored choice before the first hit so returning visitors aren't downgraded.
+            try {
+                if (window.localStorage.getItem('consent-analytics') === 'granted') {
+                    gtag('consent', 'update', { 'analytics_storage': 'granted' });
+                }
+            } catch (e) {}
+
             gtag('js', new Date());
-            
-            gtag('config', 'UA-106873852-1');
+
+            gtag('config', 'G-RF9WSPE3G7');
         </script>
         <title>Bilal Shareef - Software Consultant</title>
         <meta name="description" content="Mohammed Bilal Shareef is a Software Consultant with development experience in both compiled and interpreted programming languages. Loves to write clean and beautiful code.">
         <meta name="keywords" content="Mohammed Bilal Shareef, Bilal Shareef, Fullstack developer, Web developer, Software developer, Software developer in Chennai, Software developer in India, Software Consultant, Software Consultant in Chennai, Software Consultant in India">
         <meta name="author" content="Mohammed Bilal Shareef">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/favicon.ico" sizes="any">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
         <link type="text/css" rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:400,600" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -48,7 +71,8 @@
             <div class="left-section">
                 <div class="profile-image"></div>
                 <div class="profile-name">Mohammed Bilal Shareef</div>
-                <div class="profile-description">Software Consultant</div>
+                <div class="profile-description" aria-hidden="true">Software Consultant</div>
+                <div class="visually-hidden">Software Consultant</div>
                 <div class="resume-button-wrap">
                     <a href="pdf/resume.pdf" target="_blank" class="button-1">View Resume</a>
                 </div>
@@ -304,6 +328,19 @@
                         </ul>
                     </div>
                 </div>
+                <div class="site-footer">
+                    <button type="button" class="consent-reopen" id="consent-reopen">Cookie preferences</button>
+                </div>
+            </div>
+        </div>
+        <div class="consent-banner" id="consent-banner" role="dialog" aria-live="polite" aria-label="Cookie consent" tabindex="-1" hidden>
+            <div class="consent-copy">
+                <p class="consent-text">I use Google Analytics to understand how visitors find this site. Analytics cookies are only set if you accept. Rejecting still allows anonymous, cookieless counts.</p>
+                <p class="consent-status" id="consent-status" hidden></p>
+            </div>
+            <div class="consent-actions">
+                <button type="button" class="consent-button" id="consent-reject">Reject</button>
+                <button type="button" class="consent-button" id="consent-accept">Accept</button>
             </div>
         </div>
         <script type="text/javascript" src="js/script.js"></script>
