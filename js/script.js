@@ -3,11 +3,11 @@
     'use strict';
 
     const textsArray = [
+        'Technical Lead',
+        'Software Architect',
+        'Engineering Leader',
         'Software Consultant',
-        'FOSS Lover',
-        'Cricket Fanatic',
-        'Biryani Lover',
-        'Teetotaller'
+        'FOSS Lover'
     ];
     const themesArray = [
         'theme-red',

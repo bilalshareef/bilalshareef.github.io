@@ -191,6 +191,8 @@ body {
 }
 .detail-content ul li span, .detail-content ul li a {
     color: #1E1B18;
+}
+.detail-content ul li span.bold, .detail-content ul li a.bold {
     font-weight: 600;
 }
 .detail-content ul li a {
@@ -209,6 +211,9 @@ body {
 .detail-content p a, .sub-detail-title span a {
     text-decoration: none;
     color: #1E1B18;
+}
+strong {
+    font-weight: 600;
 }
 
 /* Consent Banner Styles */
